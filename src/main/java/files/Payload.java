@@ -26,7 +26,7 @@ public class Payload {
 				+ "";
 		
 	}
-	
+
 	
 	// This was copied from the jsoneditoronline.org and pasted here. It should be provided in your contract. pasting it here changes the format of the text to this
 	public static String CoursePrice() {

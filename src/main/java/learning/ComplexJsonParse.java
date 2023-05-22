@@ -6,15 +6,16 @@ import io.restassured.path.json.JsonPath;
 public class ComplexJsonParse {
 	
 	
-	public static void main(String[] args) {
-		JsonPath js= new JsonPath(Payload.CoursePrice());    // This directly focus on the method (courseprice) in the class(payload)
-		
 		
 //YOU CAN COPY THE PAYLOAD AND PASTE IN 'www.jsoneditoronline. org'. THIS WILL HELP YOU TO ANALYZE THE PAYLOAD AND SEE THE NESTED JSONS PROPERLY  
 
 		//(1) Print No of courses returned by API
 	
-int count=js.getInt("courses.size()");	    //use obj.getInt
+
+	public static void main(String[] args) {
+	JsonPath js= new JsonPath(Payload.CoursePrice());    // This directly focus on the method (courseprice) in the class(payload)
+		
+int count=js.getInt("courses.size()");	    //use obj.getInt bcos the course size is an integer
 System.out.println(count);
 
 
